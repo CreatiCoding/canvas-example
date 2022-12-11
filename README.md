@@ -1,5 +1,11 @@
 # canvas-example
 
+## 실행
+
+```
+yarn dev
+```
+
 ## 파일
 
 - apis/fetchImages
