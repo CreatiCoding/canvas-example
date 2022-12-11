@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ImageCanvas } from "./components/ImageCanvas";
-import { useImages } from "./hooks/useImages";
+import { useImages } from "../../hooks/useImages";
 
 export default function CanvasExamplePage() {
   const [images] = useImages();

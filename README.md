@@ -1,34 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# canvas-example
 
-## Getting Started
+## 파일
 
-First, run the development server:
+- apis/fetchImages
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+  - https://picsum.photos/v2/list 를 호출해서 이미지 리스트를 불러온다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- hooks/useImages.ts
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+  - fetchImages 를 써서 images를 받아올 수 있는 커스텀 훅
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- modles/PicsumImage
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+  - picsum에서 받아오는 이미지 데이터의 타입
 
-## Learn More
+- pages/canvas-example/index.tsx
 
-To learn more about Next.js, take a look at the following resources:
+  - next.js 페이지 예시 컴포넌트
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- pages/canvas-example/components/ImageCanvas.tsx
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  - Canvas를 띄워서 image를 로드할 수 있는 ImageCanvas 컴포넌트

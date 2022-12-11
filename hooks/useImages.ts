@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchImages } from "../../../apis/fetchImages";
+import { fetchImages } from "../apis/fetchImages";
 
 export function useImages() {
   const [images, setImages] = useState([]);
